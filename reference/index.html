@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-831a6e13d34e89ab8943621a9b1bffba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -95,6 +95,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Function Reference</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../changelog.html"> 
+<span class="menu-text">Changelog</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
@@ -116,8 +120,24 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Difference-in-Differences Estimation</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../multiple_testing.html">
+ <span class="dropdown-text">Multiple Testing Corrections</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../regression_decomposition.html">
+ <span class="dropdown-text">Regression Decomposition</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../ssc.html">
+ <span class="dropdown-text">On Small Sample Corrections</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../compare-fixest-pyfixest.html">
  <span class="dropdown-text">Compare fixest &amp; PyFixest</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pyfixest_gpu.html">
+ <span class="dropdown-text">PyFixest on the GPU</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../replicating-the-effect.html">
@@ -184,6 +204,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../reference/estimation.estimation.feglm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">estimation.estimation.feglm</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../reference/did.estimation.did2s.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">did.estimation.did2s</span></a>
   </div>
@@ -239,6 +265,30 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../reference/estimation.feiv_.Feiv.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">estimation.feiv_.Feiv</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/estimation.feglm_.Feglm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">estimation.feglm_.Feglm</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/estimation.felogit_.Felogit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">estimation.felogit_.Felogit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/estimation.feprobit_.Feprobit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">estimation.feprobit_.Feprobit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/estimation.fegaussian_.Fegaussian.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">estimation.fegaussian_.Fegaussian</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -338,7 +388,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
@@ -359,22 +409,26 @@ ul.task-list li input[type="checkbox"] {
 <td>Estimate Poisson regression model with fixed effects using the <code>ppmlhdfe</code> algorithm.</td>
 </tr>
 <tr class="odd">
+<td><a href="../reference/estimation.estimation.feglm.html#pyfixest.estimation.estimation.feglm">estimation.estimation.feglm</a></td>
+<td>Estimate GLM regression models (currently without fixed effects, this is work in progress).</td>
+</tr>
+<tr class="even">
 <td><a href="../reference/did.estimation.did2s.html#pyfixest.did.estimation.did2s">did.estimation.did2s</a></td>
 <td>Estimate a Difference-in-Differences model using Gardner’s two-step DID2S estimator.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="../reference/did.estimation.lpdid.html#pyfixest.did.estimation.lpdid">did.estimation.lpdid</a></td>
 <td>Local projections approach to estimation.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="../reference/did.estimation.event_study.html#pyfixest.did.estimation.event_study">did.estimation.event_study</a></td>
 <td>Estimate Event Study Model.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="../reference/estimation.bonferroni.html#pyfixest.estimation.bonferroni">estimation.bonferroni</a></td>
 <td>Compute Bonferroni adjusted p-values for multiple hypothesis testing.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="../reference/estimation.rwolf.html#pyfixest.estimation.rwolf">estimation.rwolf</a></td>
 <td>Compute Romano-Wolf adjusted p-values for multiple hypothesis testing.</td>
 </tr>
@@ -399,6 +453,22 @@ ul.task-list li input[type="checkbox"] {
 <td>Non user-facing class to estimate an IV model using a 2SLS estimator.</td>
 </tr>
 <tr class="even">
+<td><a href="../reference/estimation.feglm_.Feglm.html#pyfixest.estimation.feglm_.Feglm">estimation.feglm_.Feglm</a></td>
+<td>Abstract base class for the estimation of a fixed-effects GLM model.</td>
+</tr>
+<tr class="odd">
+<td><a href="../reference/estimation.felogit_.Felogit.html#pyfixest.estimation.felogit_.Felogit">estimation.felogit_.Felogit</a></td>
+<td>Class for the estimation of a fixed-effects logit model.</td>
+</tr>
+<tr class="even">
+<td><a href="../reference/estimation.feprobit_.Feprobit.html#pyfixest.estimation.feprobit_.Feprobit">estimation.feprobit_.Feprobit</a></td>
+<td>Class for the estimation of a fixed-effects probit model.</td>
+</tr>
+<tr class="odd">
+<td><a href="../reference/estimation.fegaussian_.Fegaussian.html#pyfixest.estimation.fegaussian_.Fegaussian">estimation.fegaussian_.Fegaussian</a></td>
+<td>Class for the estimation of a fixed-effects GLM with normal errors.</td>
+</tr>
+<tr class="even">
 <td><a href="../reference/estimation.feols_compressed_.FeolsCompressed.html#pyfixest.estimation.feols_compressed_.FeolsCompressed">estimation.feols_compressed_.FeolsCompressed</a></td>
 <td>Non-user-facing class for compressed regression with fixed effects.</td>
 </tr>
@@ -420,7 +490,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td><a href="../reference/report.etable.html#pyfixest.report.etable">report.etable</a></td>
-<td>Create an esttab-like table from a list of models.</td>
+<td>Generate a table summarizing the results of multiple regression models.</td>
 </tr>
 <tr class="even">
 <td><a href="../reference/report.dtable.html#pyfixest.report.dtable">report.dtable</a></td>
@@ -548,8 +618,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -660,7 +728,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
